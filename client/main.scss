@@ -2,7 +2,7 @@
 // here settings can be overwritten
 @import 'custom-foundation-settings.scss';
 
-@import '../node_modules/foundation-sites/scss/foundation.scss';
+@import '{}/node_modules/foundation-sites/scss/foundation.scss';
 
 @include foundation-everything;
 
