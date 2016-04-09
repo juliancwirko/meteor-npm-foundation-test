@@ -1,0 +1,48 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="small-12">
+      <h1>Welcome to Meteor and Foundation 6 from NPM!</h1>
+      {{> accordion}}
+    </div>
+  </div>
+</body>
+
+<template name="accordion">
+  <ul class="accordion" data-accordion>
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 1</a>
+      <div class="accordion-content" data-tab-content>
+        I would start in the open state, due to using the `is-active` state class.
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 2</a>
+      <div class="accordion-content" data-tab-content>
+        I would start in the open state, due to using the `is-active` state class.
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 3</a>
+      <div class="accordion-content" data-tab-content>
+        I would start in the open state, due to using the `is-active` state class.
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 4</a>
+      <div class="accordion-content" data-tab-content>
+        I would start in the open state, due to using the `is-active` state class.
+      </div>
+    </li>
+  </ul>
+
+  <div class="button-group">
+    <a class="secondary button">View</a>
+    <a class="success button">Edit</a>
+    <a class="warning button">Share</a>
+    <a class="alert button">Delete</a>
+  </div>
+</template>
