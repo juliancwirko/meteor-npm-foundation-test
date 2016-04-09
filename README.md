@@ -18,9 +18,10 @@ $ npm install --save-dev autoprefixer
 $ meteor add fourseven:scss
 $ meteor remove standard-minifier-css
 $ meteor add juliancwirko:postcss
+```
 
 in the package.json
-
+```
 {
   "name": "test-npm-scss",
   "private": true,
@@ -36,9 +37,13 @@ in the package.json
   },
   "postcss": {
     "plugins": {
-        "autoprefixer": {"browsers: ['last 2 versions']"}
+        "autoprefixer": {
+            "browsers": ["last 2 versions", "ie >= 9", "and_chr >= 2.3"]
+        }
     }
   }
 }
 ```
+
+Foundation for Sites 6 Docs: [http://foundation.zurb.com/sites/docs/](http://foundation.zurb.com/sites/docs/)
 
