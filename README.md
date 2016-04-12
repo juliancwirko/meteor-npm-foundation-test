@@ -45,5 +45,35 @@ in the package.json
 }
 ```
 
+### How to import files:
+
+in your `main.scss` file in the app:
+
+```css
+@import '{}/node_modules/foundation-sites/scss/foundation.scss';
+
+// include all
+@include foundation-everything;
+
+// or only some components
+```
+
+example: [main.scss file in this repo](https://github.com/juliancwirko/meteor-npm-foundation-test/blob/master/client/main.scss)
+
+
+in your `main.js` file import foundation js:
+
+```javascript
+import 'foundation-sites/dist/foundation.js';
+
+// or you can import only some of the components from 'node_modules/foundation-sites/js'
+```
+
+example: [main.js file in this repo](https://github.com/juliancwirko/meteor-npm-foundation-test/blob/master/client/main.js#L7)
+
+
+
+---
+
 Foundation for Sites 6 Docs: [http://foundation.zurb.com/sites/docs/](http://foundation.zurb.com/sites/docs/)
 
