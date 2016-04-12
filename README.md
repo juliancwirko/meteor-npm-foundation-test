@@ -1,4 +1,4 @@
-### Meteor + Foundation 6 from Npm
+### Meteor 1.3.2 + Foundation 6 from Npm
 
 You can clone this repo and run:
 
