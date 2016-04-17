@@ -42,3 +42,22 @@
 // @include foundation-title-bar;
 // @include foundation-tooltip;
 // @include foundation-top-bar;
+
+.wrapper {
+    padding-top: rem-calc(25);
+    padding-left: rem-calc(15);
+    padding-right: rem-calc(15);
+}
+.canvas-wrapper-custom,
+.off-canvas-wrapper-inner {
+    height: 100vh;
+    background-color: $black;
+    a {
+        color: $white;
+    }
+    .off-canvas {
+        ul {
+            margin-top: rem-calc(40);
+        }
+    }
+}

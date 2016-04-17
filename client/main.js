@@ -16,3 +16,13 @@ Template.accordion.onDestroyed(function () {
         this.accordion.destroy();
     }
 });
+
+Template.offcanvas.onRendered(function () {
+    this.offcanvas = new Foundation.OffCanvas($('#offCanvas'));
+});
+
+Template.offcanvas.onDestroyed(function () {
+    if (this.offcanvas) {
+        this.offcanvas.destroy();
+    }
+});

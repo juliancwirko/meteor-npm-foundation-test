@@ -1,15 +1,45 @@
 <head>
   <title>simple</title>
 </head>
-
 <body>
-  <div class="row">
-    <div class="small-12">
-      <h1>Welcome to Meteor and Foundation 6 from NPM!</h1>
-      {{> accordion}}
+  {{> offcanvas}}
+</body>
+
+<template name="offcanvas">
+  <div class="off-canvas-wrapper canvas-wrapper-custom">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <ul class="vertical menu">
+          <li><a href="#">Foundation</a></li>
+          <li><a href="#">Dot</a></li>
+          <li><a href="#">ZURB</a></li>
+          <li><a href="#">Com</a></li>
+          <li><a href="#">Slash</a></li>
+          <li><a href="#">Sites</a></li>
+        </ul>
+      </div>
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="title-bar">
+          <div class="title-bar-left">
+            <span class="title-bar-title">Foundation</span>
+          </div>
+          <div class="title-bar-right">
+            <button class="menu-icon" type="button" data-open="offCanvas"></button>
+          </div>
+        </div>
+        <div class="row wrapper">
+          <div class="small-12">
+            <h1>Welcome to Meteor and Foundation 6 from NPM!</h1>
+            {{> accordion}}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</body>
+</template>
 
 <template name="accordion">
   <ul class="accordion" data-accordion>
