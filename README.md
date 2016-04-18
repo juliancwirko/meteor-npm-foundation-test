@@ -10,7 +10,7 @@ $ meteor
 or you can configure Meteor + Foundation 6 from Npm from the start like that:
 
 ```
-$ meteor create --release 1.3-rc.5 foundation-from-npm
+$ meteor create foundation-from-npm
 $ cd foundation-from-npm
 $ npm install
 $ npm install --save foundation-sites
