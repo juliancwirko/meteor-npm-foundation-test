@@ -30,7 +30,7 @@ in the package.json
   },
   "dependencies": {
     "foundation-sites": "^6.2.1",
-    "meteor-node-stubs": "~0.2.0"
+    "meteor-node-stubs": "~0.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6"
